@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      config:
+        server-addr: console.nacos.io:80
+        namespace: 9e29ddf4-03bb-46a0-b1b9-75cd24d61395
+        file-extension: json
+      discovery:
+        enabled: true
+        register-enabled: true
+        server-addr: console.nacos.io:80
+        namespace: 9e29ddf4-03bb-46a0-b1b9-75cd24d61395
