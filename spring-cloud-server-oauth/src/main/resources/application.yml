@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: spring-cloud-server-oauth
+server:
+  port: 8080
+feign:
+  sentinel:
+    enabled: true
+#开启端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
